@@ -1,0 +1,45 @@
+img.snapshot {
+    width: 356px;
+    border-radius: 2px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.project-card-title {
+    font-weight: 500;
+    text-transform: lowercase;
+    align-self: stretch;
+}
+
+.project-card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.project-category-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-category-group > p.caption {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: var(--Tuatara-600);
+    text-transform: uppercase;
+}
+
+.vertical-rule-12px {
+    height: 12px;
+    border-right: 1px var(--Tuatara-300) solid;
+}
+

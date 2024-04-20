@@ -1,0 +1,35 @@
+.top-nav {
+    display: flex;
+    width: 100vw;
+    padding: 24px 96px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+.top-nav > div.left-section {
+    font-weight: 600;
+}
+
+.top-nav > div.right-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.icon-button-32px {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.linkedin, .email {
+    height: 24px;
+    width: 24px;
+}
+

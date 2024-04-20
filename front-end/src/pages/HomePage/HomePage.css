@@ -1,0 +1,18 @@
+.homepage-container {
+    display: flex;
+    padding: 128px 0px 96px 96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 112px;
+    box-sizing: border-box;
+    }
+
+div.bio {
+    max-width: 1120px;
+    padding-right: 96px;
+}
+
+h2.jobs, h2.personal-statement {
+    font-family: 'Samudera', serif;
+}

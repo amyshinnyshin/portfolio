@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Samudera';
+    src: url('../public/fonts/Samudera.otf') format('otf');
+}
+
+:root {
+    --White: #FFFFFF;
+
+    --Tuatara-50: #F6F6F6;
+    --Tuatara-100: #E7E7E7;
+    --Tuatara-200: #D1D1D1;
+    --Tuatara-300: #B0B0B0;
+    --Tuatara-400: #888888;
+    --Tuatara-500: #6D6D6D;
+    --Tuatara-600: #5D5D5D;
+    --Tuatara-700: #4F4F4F;
+    --Tuatara-800: #454545;
+    --Tuatara-900: #363636;
+    --Tuatara-950: #262626;
+
+}
+
+body {
+    margin: 0px;
+    background-color: #FCF8F3;
+    font-family: 'Outfit';
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    color: var(--Tuatara-900);
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 72px;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 64px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
