@@ -19,4 +19,5 @@ div.bio {
 
 h2.jobs, h2.personal-statement {
     font-family: 'Samudera', serif;
+    font-weight: 100;
 }

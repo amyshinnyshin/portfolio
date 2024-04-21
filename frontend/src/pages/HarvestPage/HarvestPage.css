@@ -1,8 +1,14 @@
+.harvest-page  {
+    background-color: #E6E870;
+    margin-bottom: 160px;
+}
+
 .harvest-page-container {
     position: relative;
     top: 80px;
     display: flex;
     flex-direction: column;
+    background-color: #E6E870;
 }
 
 .harvest-page-container .hero-image-container {

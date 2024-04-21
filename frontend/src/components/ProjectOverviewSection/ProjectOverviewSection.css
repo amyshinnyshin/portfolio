@@ -1,14 +1,26 @@
-h1.header {
-    font-family: 'Samudera';
-    text-transform: lowercase;
-}
-
 .project-overview-section {
     display: flex;
-    max-width: 864px;
+    width: 100vw;
+    padding: 96px 96px 112px 96px;
+    align-items: flex-start;
+    gap: 64px;
+    flex-shrink: 0;
+
+    background-color: #FCF8F3;
+}
+
+.project-overview-content-container {
+    max-width: 992px;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+}
+
+h1.header {
+    font-family: 'Samudera';
+    font-weight: 100;
+    text-transform: lowercase;
 }
 
 .main-content-container {
