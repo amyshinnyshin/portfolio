@@ -4,6 +4,7 @@ import './HarvestPage.css'
 import TopNav from '../../components/TopNav/TopNav'
 import ProjectOverviewSection from '../../components/ProjectOverviewSection/ProjectOverviewSection'
 
+
 const HarvestPage = () => {
 
   const paragraph = [
