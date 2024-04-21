@@ -1,0 +1,39 @@
+.assets-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+    gap: 32px;
+}
+
+.asset {
+    width: 100%;
+    grid-column: span 9; /* Take up 9 columns, leaving 3 for reasons */
+}
+
+.assets-reason-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    grid-column: span 3; /* Take up 3 columns */
+}
+
+.reason {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.reason-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.small-12px-lc {
+    font-size: 12px;
+    line-height: 16px;
+}

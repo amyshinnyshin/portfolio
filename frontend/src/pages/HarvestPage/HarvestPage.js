@@ -6,6 +6,7 @@ import ProjectOverviewSection from '../../components/ProjectOverviewSection/Proj
 import SubNav from '../../components/SubNav/SubNav'
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Subsection from '../../components/Subsection /Subsection';
+import { AssetsOnLeft } from '../../components/AssetShowcase/AssetShowcase';
 
 
 const HarvestPage = () => {
@@ -92,9 +93,11 @@ const HarvestPage = () => {
                 <SectionHeader sectionHeader='ideation'/>
                 <div className='paragraph-group'>
                   <Subsection header='feature prioritization matrix' copy="We brainstormed using the 'I Like, I Wish & What If' Diagram and the Feature Prioritization Matrix and developed some ideas and features to incorporate into the app. We distilled it down to three features that would make the most impact and improve the users' experience:"/>
+                  <AssetsOnLeft />
                 </div>
                 <div className='paragraph-group'>
                   <Subsection header='storyboard' copy="We created a user storyboard to ideate and enhance the shopping experience for the modern, health-conscious shopper. Our focus is on those seeking organic options for their families and wishing to avoid chain grocery stores. Through Harvest, our users can select from a diverse range of fresh, locally sourced foods, fostering a connection with the local economy. This design attempts to address today's conscientious consumers' specific needs and preferences."/>
+                  <img src='/images/harvest/storyboard.png' alt='userflow'></img>
                 </div>
                 <div className='paragraph-group'>
                   <Subsection header='user flow' copy="It was important that users could browse and shop before creating an account." paddingBottom='0px'/>

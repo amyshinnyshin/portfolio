@@ -27,3 +27,6 @@
     height: 448px;
 }
 
+.ideation > div.section-group-container > div.main-section-group > div.paragraph-group {
+    padding-bottom: 80px;
+}
