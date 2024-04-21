@@ -1,0 +1,34 @@
+h1.header {
+    font-family: 'Samudera';
+    text-transform: lowercase;
+}
+
+.project-overview-section {
+    display: flex;
+    max-width: 864px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.main-content-container .paragraph-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.read-only-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+}

@@ -1,22 +1,29 @@
 .top-nav {
+    position: fixed;
+    z-index: 10;
     display: flex;
     width: 100vw;
     padding: 24px 96px;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-
     font-size: 20px;
 }
 
 .top-nav > div.left-section {
     font-weight: 600;
+
 }
 
 .top-nav > div.right-section {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.vertical-rule-16px {
+    height: 16px;
+    border-right: 1px var(--Tuatara-300) solid;
 }
 
 .icon-button-32px {

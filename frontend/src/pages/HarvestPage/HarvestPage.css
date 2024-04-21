@@ -1,0 +1,21 @@
+.harvest-page-container {
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.harvest-page-container .hero-image-container {
+    display: flex;
+    width: 100vw;
+    height: 560px;
+    background-color: #E6E870;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    box-sizing: border-box;
+}
+
+.harvest-page-container .hero-image-container img {
+    height: 448px;
+}

@@ -1,0 +1,12 @@
+.read-only-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+}
+
+
+p.semibold {
+    font-weight: 600;
+}
