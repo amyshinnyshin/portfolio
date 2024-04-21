@@ -6,14 +6,14 @@
 
 .asset {
     width: 100%;
-    grid-column: span 9; /* Take up 9 columns, leaving 3 for reasons */
+    grid-column: span 9; 
 }
 
 .assets-reason-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    grid-column: span 3; /* Take up 3 columns */
+    grid-column: span 3; 
 }
 
 .reason {

@@ -1,0 +1,17 @@
+.harvest-grid-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 24px;
+  }
+  
+  .harvest-grid-layout > img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .full-width {
+    grid-column: span 2;
+  }
+  

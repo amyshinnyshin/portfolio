@@ -6,7 +6,9 @@ import ProjectOverviewSection from '../../components/ProjectOverviewSection/Proj
 import SubNav from '../../components/SubNav/SubNav'
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Subsection from '../../components/Subsection /Subsection';
-import { AssetsOnLeft } from '../../components/AssetShowcase/AssetShowcase';
+import { AssetsOnLeft, AssetsOnRight } from '../../components/AssetShowcase/AssetShowcase';
+import { HarvestGridLayout } from '../../components/GridLayout/GridLayout';
+
 
 
 const HarvestPage = () => {
@@ -112,6 +114,38 @@ const HarvestPage = () => {
               
             </div>
           </div>
+
+          <div className='whiteBG main-section-container usability-test'>
+            <div className='section-group-container'>
+              <div className='main-section-group'>
+                <SectionHeader sectionHeader='usability testing'/>
+                <div className='paragraph-group'>
+                  <Subsection copy="After designing the lo-fi prototype, we conducted five usability tests and analyzed the data. We identified three main issues:"/>
+                  <AssetsOnRight />
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div className='design-section'>
+              <h6 className='design-header'>DESIGN INSPIRATION</h6>
+              <img src='/images/harvest/design-inspo.png' alt='design-inspo'/>
+          </div>
+
+          <div className='tanBG main-section-container usability-test'>
+            <div className='section-group-container'>
+              <div className='main-section-group'>
+                <SectionHeader sectionHeader='design'/>
+                <p>Together, we collaborated on building our hi-fi prototype. I specifically focused on designing and wireframing the 'Add to Cart' and 'Checkout' screens, ensuring smooth transitions between them. I iterated on these designs 2-3 times to achieve continuity and uniformity in our app's overall design.</p>
+                <HarvestGridLayout />
+                
+              </div>
+              
+            </div>
+          </div>
+
+         
 
         </div>
 
