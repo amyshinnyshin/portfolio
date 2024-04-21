@@ -1,31 +1,26 @@
 .project-overview-section {
-    display: flex;
     width: 100vw;
-    padding: 96px 96px 112px 96px;
-    align-items: flex-start;
-    gap: 64px;
-    flex-shrink: 0;
-
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    padding: 96px;
+    gap: 32px;
     background-color: #FCF8F3;
+    box-sizing: border-box;
 }
 
 .project-overview-content-container {
-    max-width: 992px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+    grid-column: 4 / -1; 
 }
 
 h1.header {
     font-family: 'Samudera';
     font-weight: 100;
     text-transform: lowercase;
+    grid-column: 1 / -1; 
+    padding-bottom: 40px;
 }
 
-.main-content-container {
-    display: flex;
-    flex-direction: column;
+.project-overview-section .main-content-container {
     align-items: flex-start;
     gap: 40px;
     align-self: stretch;
@@ -38,9 +33,10 @@ h1.header {
 }
 
 .read-only-container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between; /* Adjust as needed */
     align-items: flex-start;
     gap: 80px;
-    align-self: stretch;
 }
+

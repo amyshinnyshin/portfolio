@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import './TopNav.css';
 
 const TopNav = ({ textColor, bgColor, isDarkBG }) => {
@@ -12,7 +13,7 @@ const TopNav = ({ textColor, bgColor, isDarkBG }) => {
 
   return (
     <div className='top-nav' style={bgStyle}>
-      <div className='left-section' style={textStyle}>amy shin</div>
+      <Link to={`/`} className='left-section' style={textStyle}>amy shin</Link>
       <div className='right-section'>
         <div style={textStyle}>resume</div>
         <div className='vertical-rule-16px'></div>

@@ -1,25 +1,23 @@
-.order-details-nav-page  {
+.nomad-page  {
+    background-color: #FFD661;
     margin-bottom: 160px;
     overflow-x: hidden;
 }
 
-.od-nav-page-container {
+.nomad-page-container {
     position: relative;
     top: 80px;
     display: flex;
     flex-direction: column;
+    background-color: #FFD661;
 }
 
-.od-nav-page-container .hero-image-container {
+.nomad-page-container .hero-image-container {
     display: flex;
     width: 100vw;
     height: 560px;
-    background-color: #709BEE;
+    background-color: #FFD661;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-
-
-
-

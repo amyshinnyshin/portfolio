@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './HomePage.css'
 
 import TopNav from '../../components/TopNav/TopNav'
@@ -6,6 +6,12 @@ import Carousel from '../../components/Carousel/Carousel'
 
 
 const HomePage = () => {
+  
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='homepage'>
       <TopNav bgColor='#FCF8F3' textColor='#363636'isDarkBG={false}/>

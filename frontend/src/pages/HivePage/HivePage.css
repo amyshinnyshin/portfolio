@@ -1,25 +1,23 @@
-.order-details-nav-page  {
+.hive-page  {
+    background-color: #FFD2B9;
     margin-bottom: 160px;
     overflow-x: hidden;
 }
 
-.od-nav-page-container {
+.hive-page-container {
     position: relative;
     top: 80px;
     display: flex;
     flex-direction: column;
+    background-color: #FFD2B9;
 }
 
-.od-nav-page-container .hero-image-container {
+.hive-page-container .hero-image-container {
     display: flex;
     width: 100vw;
     height: 560px;
-    background-color: #709BEE;
+    background-color: #FFD2B9;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-
-
-
-

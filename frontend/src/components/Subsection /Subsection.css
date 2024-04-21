@@ -1,0 +1,12 @@
+.subsection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.subsection-container h6.semibold {
+    text-transform: uppercase;
+    font-weight: 600;
+}

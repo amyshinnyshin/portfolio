@@ -1,25 +1,23 @@
-.order-details-nav-page  {
+.booknook-page  {
+    background-color: #9BA8F2;
     margin-bottom: 160px;
     overflow-x: hidden;
 }
 
-.od-nav-page-container {
+.booknook-page-container {
     position: relative;
     top: 80px;
     display: flex;
     flex-direction: column;
+    background-color: #9BA8F2;
 }
 
-.od-nav-page-container .hero-image-container {
+.booknook-page-container .hero-image-container {
     display: flex;
     width: 100vw;
     height: 560px;
-    background-color: #709BEE;
+    background-color: #9BA8F2;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-
-
-
-

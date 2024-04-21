@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './HarvestPage.css'
 
 import TopNav from '../../components/TopNav/TopNav'
 import ProjectOverviewSection from '../../components/ProjectOverviewSection/ProjectOverviewSection'
+import SubNav from '../../components/SubNav/SubNav'
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
+import Subsection from '../../components/Subsection /Subsection';
 
 
 const HarvestPage = () => {
+
+  const subMenuItems = [
+    { menuText: 'project overview' },
+    { menuText: 'research' },
+    { menuText: 'definition' },
+    { menuText: 'ideation' },
+    { menuText: 'usability' },
+    { menuText: 'design' },
+    { menuText: 'future steps' },
+  ];
 
   const paragraph = [
     { bodyParagraph: `Harvest is an app for health-conscious shoppers, offering locally-sourced, seasonal items from farmers markets. Developed over three weeks by a team including Anna Curl, Kate Ellis, Al Schmidt, Ali Villareal, and myself, the app aims to support local farmers and small businesses while providing a user-friendly shopping experience.` },
@@ -20,6 +33,13 @@ const HarvestPage = () => {
     { label: 'Duration', copy: '~3 Weeks' },
   ];
 
+
+
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='harvest-page'>
       <TopNav bgColor='#E6E870' textColor='#363636' isDarkBG={false}/>
@@ -27,8 +47,70 @@ const HarvestPage = () => {
         <div className='hero-image-container'>
           <img src='/images/hero-image/harvest.png' alt='harvest'></img>
         </div>
+        <div className='main-content-container'> 
+          <SubNav items={subMenuItems} />
+          <ProjectOverviewSection paragraph={paragraph} info={info}/>
 
-        <ProjectOverviewSection paragraph={paragraph} info={info}/>
+          <div className='whiteBG main-section-container reserach'>
+            <div className='section-group-container'>
+              <div className='main-section-group'>
+                <SectionHeader sectionHeader='research'/>
+                <div className='paragraph-group'>
+                  <p>We conducted five user interviews and collected 77 survey responses to understand user's shopping habits, pain points, and motivations. We wanted to know how important local produce and farmer's markets are for health-conscious shoppers to gauge the viability of our app, especially during the COVID-19 pandemic.
+                  </p>
+                  <p>
+                  Our user research found that shoppers did not like to spend more than an hour or two shopping. We also noted that most shoppers are willing to spend more at one store than frequent multiple stores to find discounted and cheaper items.
+                  </p>
+                </div>
+              </div>
+              <Subsection header='competitive analysis' copy='Apps and services predominantly centered around large metropolitan areas and lacked engaging and user-friendly designs. In contrast, adjacent competitors thrived by providing packaged meal plans, fresh produce, and groceries sourced directly from local farmers.'/>
+              <Subsection header='user interview' copy='The research identified key pain points related to crowds, product availability, and sourcing products across multiple locations.'/>
+              <Subsection header='Google form survey' copy='Survey results revealed shared sentiments regarding the grocery shopping experience and time investment. However, notable discrepancies surfaced about individual dietary preferences and food choice lifestyles.'/>
+              <img src='/images/harvest/research.png' alt='research'></img>
+            </div>
+          </div>
+
+          <div className='whiteBG main-section-container definition'>
+            <div className='section-group-container'>
+              <div className='main-section-group'>
+                <SectionHeader sectionHeader='definition'/>
+                <div className='paragraph-group'>
+                  <Subsection header='user persona' copy='After organizing our user insights into an Affinity Diagram, we crafted a proto-persona centered around Gwen Martin, a dynamic young mom juggling the demands of both work and family life. Despite her hectic schedule, Gwen stands out as a health-conscious individual, particularly attentive to the dietary needs of her one-year-old child.' paddingBottom='0px'/>
+                  <p>
+                  This helped us develop a final user persona, helping us refine and personalize the user experience within the Harvest app. By focusing on Gwen's specific needs and preferences, We wanted to create a solution that resonates with the challenges faced by individuals like her, offering a tailored and meaningful shopping experience that aligns with her health-conscious lifestyle amid a busy routine.
+                  </p>
+                </div>
+              </div>
+              
+              <img src='/images/harvest/userpersona.png' alt='research'></img>
+            </div>
+          </div>
+
+          <div className='whiteBG main-section-container ideation'>
+            <div className='section-group-container'>
+              <div className='main-section-group'>
+                <SectionHeader sectionHeader='ideation'/>
+                <div className='paragraph-group'>
+                  <Subsection header='feature prioritization matrix' copy="We brainstormed using the 'I Like, I Wish & What If' Diagram and the Feature Prioritization Matrix and developed some ideas and features to incorporate into the app. We distilled it down to three features that would make the most impact and improve the users' experience:"/>
+                </div>
+                <div className='paragraph-group'>
+                  <Subsection header='storyboard' copy="We created a user storyboard to ideate and enhance the shopping experience for the modern, health-conscious shopper. Our focus is on those seeking organic options for their families and wishing to avoid chain grocery stores. Through Harvest, our users can select from a diverse range of fresh, locally sourced foods, fostering a connection with the local economy. This design attempts to address today's conscientious consumers' specific needs and preferences."/>
+                </div>
+                <div className='paragraph-group'>
+                  <Subsection header='user flow' copy="It was important that users could browse and shop before creating an account." paddingBottom='0px'/>
+                  <p className='padding-btm-24px'>Our competitor analysis unveiled a common frustration among users as other grocery delivery apps restricted access until an account was created, causing stress and frustration. By creating a more user-friendly approach, we aim to improve the overall experience, making it seamless from creating an account to checkout.</p>
+                  <img src='/images/harvest/userflow.png' alt='userflow'></img>
+                </div>
+                <div className='paragraph-group'>
+                  <Subsection header='Lo-Fi Wireframes' copy="After defining the user and ideating different solutions, we independently sketched how we envisioned Harvest. Below are my lo-fi sketches. I hand-drew 18 frames to visualize the layout and design of the app."/>
+                  <img src='/images/harvest/lo-fi.png' alt='lo-fi'></img>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>

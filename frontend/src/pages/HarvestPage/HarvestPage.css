@@ -1,6 +1,7 @@
 .harvest-page  {
     background-color: #E6E870;
     margin-bottom: 160px;
+    overflow-x: hidden;
 }
 
 .harvest-page-container {
@@ -25,3 +26,4 @@
 .harvest-page-container .hero-image-container img {
     height: 448px;
 }
+

@@ -1,25 +1,23 @@
-.order-details-nav-page  {
+.onboarding-page  {
+    background-color: #215053;
     margin-bottom: 160px;
     overflow-x: hidden;
 }
 
-.od-nav-page-container {
+.onboarding-page-container {
     position: relative;
     top: 80px;
     display: flex;
     flex-direction: column;
+    background-color: #215053;
 }
 
-.od-nav-page-container .hero-image-container {
+.onboarding-page-container .hero-image-container {
     display: flex;
     width: 100vw;
     height: 560px;
-    background-color: #709BEE;
+    background-color: #215053;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-
-
-
-
