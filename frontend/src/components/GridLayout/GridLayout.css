@@ -1,5 +1,4 @@
 /* harvest layout */
-
 .harvest-grid-layout {
   width: 100%;
   display: grid;
@@ -48,9 +47,20 @@ div.yellowBG {
   background: #FFC961;
 }
 
-.hive-grid-layout > .full-width > img.hive-gif {
+.booknook-brand-grid-layout {
   width: 100%;
-  border-radius: 8px;
-  border: 1px solid #F9F4FF;
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 24px;
+}
+
+.booknook-brand-grid-layout > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.booknook-brand-grid-layout > .full-width {
+  grid-column: span 2;
 }

@@ -104,7 +104,9 @@ const HivePage = () => {
             <div className='section-group-container'>
               <div className='main-section-group'>
                 <SectionHeader sectionHeader='development'/>
-                <p>For the Hive app, I used Django Rest Framework (DRF) for the backend and React for the frontend. In the backend, I created models for job applications and implemented API endpoints for CRUD operations. On the frontend, I used React to create a dynamic user interface with components for managing job applications. I then connected the frontend to the backend using Axios for HTTP requests. </p>
+                <div className='paragraph-group'>
+                  <p>For the Hive app, I used Django Rest Framework (DRF) for the backend and React for the frontend. In the backend, I created models for job applications and implemented API endpoints for CRUD operations. On the frontend, I used React to create a dynamic user interface with components for managing job applications. I then connected the frontend to the backend using Axios for HTTP requests. </p>
+                </div>
                 <HiveGridLayout />
                 
               </div>

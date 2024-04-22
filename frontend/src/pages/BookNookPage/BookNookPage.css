@@ -12,12 +12,37 @@
     background-color: #9BA8F2;
 }
 
-.booknook-page-container .hero-image-container {
-    display: flex;
-    width: 100vw;
+.booknook-page-container > .hero-image-container {
+    display: inline-flex;
     height: 560px;
-    background-color: #9BA8F2;
+    padding-top: 24px;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
+}
+
+.booknook-page-container > .hero-image-container > img {
+    width: 912px;
+    flex-shrink: 0;
+}
+
+.ul-booknook {
+    padding-bottom: 24px;
+}
+
+.booknook-code-divider-section {
+    background-color: #FCEAC8;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 400px;
+    padding: 0px, 96px 0px 96px;
+    overflow: hidden;
+}
+
+.booknook-code-divider-section > img {
+    top: -240px;
+    width: 100%;
+    opacity: 70%;
 }

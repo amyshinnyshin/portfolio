@@ -55,7 +55,7 @@ const HarvestPage = () => {
           <ProjectOverviewSection paragraph={paragraph} info={info}/>
 
           <div className='whiteBG whiteBG-section-group'>
-            <div className='whiteBG main-section-container reserach'>
+            <div className='whiteBG main-section-container research'>
               <div className='section-group-container'>
                 <div className='main-section-group'>
                   <SectionHeader sectionHeader='research'/>

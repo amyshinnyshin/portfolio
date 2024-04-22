@@ -21,9 +21,7 @@ const HiveGridLayout = () => {
   return (
     <div className='hive-grid-layout'>
 
-        <div className='full-width yellowBG'>
-          <img className='hive-gif' src='/images/hive/hive-interaction.gif' alt='hive-interaction'/>
-        </div>
+      <img className='full-width' src='/images/hive/hive-interaction.gif' alt='hive-interaction'/>
         
         <img src='/images/hive/adding-comment.png' alt='adding-comments'/>
         <img src='/images/hive/editing-deleting-comment.png' alt='editing-deleting-comments'/>
@@ -34,4 +32,28 @@ const HiveGridLayout = () => {
   )
 }
 
-export { HarvestGridLayout, HiveGridLayout}
+const BookNookLayoutBrand = () => {
+  return (
+    <div className='booknook-brand-grid-layout'>
+
+      <img className='full-width' src='/images/booknook/booknook-logo.png' alt='booknook-logo'/>
+      <img className='full-width' src='/images/booknook/hi-fi.png' alt='booknook-hi-fi'/>
+        
+    </div>
+  )
+}
+
+const BookNookLayoutDesigns = () => {
+  return (
+    <div className='booknook-brand-grid-layout'>
+
+      <img src='/images/booknook/dropdown.png' alt='dropdown'/>
+      <img src='/images/booknook/book-selection.png' alt='book-selection'/>
+      <img className='full-width' src='/images/booknook/booknook-gif.gif' alt='booknook-gif'/>
+        
+    </div>
+  )
+}
+
+
+export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns}
