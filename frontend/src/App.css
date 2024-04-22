@@ -29,7 +29,7 @@ body {
     font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
     margin: 0px;
     color: var(--Tuatara-800);
 }
@@ -70,6 +70,22 @@ p {
 
 }
 
+ul {
+    margin-bottom: 0px;
+}
+
+li {
+    padding-bottom: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.vertical-rule-page {
+    padding-top: 112px;
+    border-bottom: 1px solid var(--Tuatara-100);
+}
+
 .padding-btm-24px {
     padding-bottom: 24px;
 }
@@ -87,14 +103,23 @@ p {
     flex-direction: column;
 }
 
+.whiteBG-section-group, .one-section {
+    padding-bottom: 160px;
+}
+
+.future-steps {
+    padding-bottom: 240px;
+}
+
 .main-section-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 32px; 
-    padding: 96px 96px 128px 96px; 
+    padding-top: 96px;
+    padding-left: 96px;
+    padding-right: 96px;
     box-sizing: border-box;
 }
-
 
 .section-group-container {
     grid-column: 4 / -1; 
@@ -109,6 +134,8 @@ p {
     gap: 40px;
 }
 
+
+
 .paragraph-group {
     grid-column: 4 / -1; 
     display: flex;
@@ -117,4 +144,11 @@ p {
     padding-bottom: 24px;
 }
 
+.paragraph-group-80px {
+    grid-column: 4 / -1; 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 80px;
+}
 

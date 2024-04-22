@@ -8,5 +8,9 @@
 
 .subsection-container h6.semibold {
     text-transform: uppercase;
+
+}
+
+.semibold {
     font-weight: 600;
 }

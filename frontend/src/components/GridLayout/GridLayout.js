@@ -17,4 +17,21 @@ const HarvestGridLayout = () => {
   )
 }
 
-export {HarvestGridLayout}
+const HiveGridLayout = () => {
+  return (
+    <div className='hive-grid-layout'>
+
+        <div className='full-width yellowBG'>
+          <img className='hive-gif' src='/images/hive/hive-interaction.gif' alt='hive-interaction'/>
+        </div>
+        
+        <img src='/images/hive/adding-comment.png' alt='adding-comments'/>
+        <img src='/images/hive/editing-deleting-comment.png' alt='editing-deleting-comments'/>
+        
+        <img className='full-width' src='/images/hive/kanban-board.png' alt='hive-kanban'/>
+        
+    </div>
+  )
+}
+
+export { HarvestGridLayout, HiveGridLayout}

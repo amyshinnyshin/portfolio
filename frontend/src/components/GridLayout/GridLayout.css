@@ -1,17 +1,56 @@
+/* harvest layout */
+
 .harvest-grid-layout {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 24px;
-  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 24px;
+}
+
+.harvest-grid-layout > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.harvest-grid-layout > .full-width {
+  grid-column: span 2;
+}
+
+
+/* hive layout */
+.hive-grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 24px;
+}
+
+.hive-grid-layout > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hive-grid-layout > .full-width {
+  grid-column: span 2;
+}
   
-  .harvest-grid-layout > img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .full-width {
-    grid-column: span 2;
-  }
-  
+div.yellowBG {
+  display: flex;
+  padding: 128px 112px 128px 112px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 2px;
+  background: #FFC961;
+}
+
+.hive-grid-layout > .full-width > img.hive-gif {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #F9F4FF;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+}

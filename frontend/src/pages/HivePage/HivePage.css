@@ -12,12 +12,32 @@
     background-color: #FFD2B9;
 }
 
-.hive-page-container .hero-image-container {
-    display: flex;
-    width: 100vw;
+.hive-page-container > .hero-image-container {
+    display: inline-flex;
     height: 560px;
-    background-color: #FFD2B9;
+    padding: 56px 108px;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
+}
+
+.hive-page-container > .hero-image-container > img {
+    width: 1086px;
+    flex-shrink: 0;
+}
+
+.hive-code-divider-section {
+    background-color: #AD97DB;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 400px;
+    padding: 0px, 96px 0px 96px;
+    overflow: hidden;
+}
+
+.hive-code-divider-section > img {
+    top: -240px;
+    width: 100%;
 }

@@ -6,27 +6,26 @@
 
 .asset {
     width: 100%;
-    grid-column: span 9; 
+    grid-column: span 9;
 }
 
 .assets-reason-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    grid-column: span 3; 
+    grid-column: span 3;
 }
 
 .reason {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
     gap: 8px;
+    align-items: flex-start;
 }
 
-.reason-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+.width-16px {
+    width: 16px;
+    flex-shrink: 0; 
 }
 
 .medium {

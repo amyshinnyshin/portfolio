@@ -30,9 +30,6 @@
     width: auto;
 }
 
-.ideation > div.section-group-container > div.main-section-group > div.paragraph-group {
-    padding-bottom: 64px;
-}
 
 h6.design-header {
     color: var(--Tuatara-500);

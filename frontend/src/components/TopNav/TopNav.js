@@ -18,11 +18,12 @@ const TopNav = ({ textColor, bgColor, isDarkBG }) => {
         <div style={textStyle}>resume</div>
         <div className='vertical-rule-16px'></div>
         <div className='icon-button-32px'>
-          <img className='linkedin' src={isDarkBG ? '/icons/linkedin-light.png' : '/icons/linkedin-dark.png'} alt='linkedin' />
+          <img className='email' src={isDarkBG ? '/icons/email-light.png' : '/icons/email-dark.png'} alt='email' />
         </div>
         <div className='icon-button-32px'>
-          <img className='email' src={isDarkBG ? '/icons/email-light.png' : '/icons/email-dark.png'} alt='linkedin' />
+          <img className='linkedin' src={isDarkBG ? '/icons/linkedin-light.png' : '/icons/linkedin-dark.png'} alt='linkedin' />
         </div>
+        
       </div>
     </div>
   )
