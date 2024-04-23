@@ -13,9 +13,9 @@ const OrderDetailsNavPage = () => {
     { menuText: 'objectives' },
   ];
 
-  const paragraph = [
-    { bodyParagraph: `As we approached the Beta stage, a decision needed to be made regarding shipment navigation. The introduction of auto-routing, a feature that assigns orders to Ship From Locations based on proximity to customers, and planning status highlighted the need for an order planning page within the order details. This page allows merchants to review and manage exceptions with the full context of the order and planning actions. However, the tab navigation pattern limited the hierarchy and relationship between an order and its shipments.` },
-    { bodyParagraph: `By implementing the left menu navigation concept, we aimed to improve the user experience and streamline the navigation flow in the Order Details section for the Beta release. We believed this concept would provide a clearer delineation between order-level information and planning actions, and shipment actions, ensuring a better hierarchy and relationship between orders and their shipments.` },
+  const projectOverviewText = [
+    { text: `As we approached the Beta stage, a decision needed to be made regarding shipment navigation. The introduction of auto-routing, a feature that assigns orders to Ship From Locations based on proximity to customers, and planning status highlighted the need for an order planning page within the order details. This page allows merchants to review and manage exceptions with the full context of the order and planning actions. However, the tab navigation pattern limited the hierarchy and relationship between an order and its shipments.` },
+    { text: `By implementing the left menu navigation concept, we aimed to improve the user experience and streamline the navigation flow in the Order Details section for the Beta release. We believed this concept would provide a clearer delineation between order-level information and planning actions, and shipment actions, ensuring a better hierarchy and relationship between orders and their shipments.` },
   ];
   
   const info = [
@@ -38,7 +38,7 @@ const OrderDetailsNavPage = () => {
         </div>
         <div className='main-content-container'> 
           <SubNav items={subMenuItems} />
-          <ProjectOverviewSection paragraph={paragraph} info={info}/>
+          <ProjectOverviewSection text={projectOverviewText} info={info}/>
           
         </div>
       </div>

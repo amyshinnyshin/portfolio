@@ -47,6 +47,26 @@ div.yellowBG {
   background: #FFC961;
 }
 
+.booknook-brand-grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 24px;
+  border-radius: 2px;
+}
+
+.booknook-brand-grid-layout > img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.booknook-brand-grid-layout > .full-width {
+  grid-column: span 2;
+}
+
+
 .nomad-design-grid-layout {
   width: 100%;
   display: grid;
