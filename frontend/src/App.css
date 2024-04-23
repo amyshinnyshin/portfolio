@@ -81,6 +81,11 @@ li {
     font-weight: 300;
 }
 
+.descriptive {
+    font-family: 'Samudera';
+    font-weight: 100;
+}
+
 .vertical-rule-page {
     padding-top: 112px;
     border-bottom: 1px solid var(--Tuatara-100);

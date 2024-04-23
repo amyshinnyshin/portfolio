@@ -8,6 +8,8 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Subsection from '../../components/Subsection /Subsection';
 import { AssetsOnLeft, AssetsOnRight } from '../../components/AssetShowcase/AssetShowcase';
 import { HarvestGridLayout } from '../../components/GridLayout/GridLayout';
+import Paragraph from '../../components/Paragraph/Paragraph';
+// import Paragraph from '../../components/Paragraph/Paragraph';
 
 
 
@@ -23,10 +25,10 @@ const HarvestPage = () => {
     { menuText: 'future steps' },
   ];
 
-  const paragraph = [
-    { bodyParagraph: `Harvest is an app for health-conscious shoppers, offering locally-sourced, seasonal items from farmers markets. Developed over three weeks by a team including Anna Curl, Kate Ellis, Al Schmidt, Ali Villareal, and myself, the app aims to support local farmers and small businesses while providing a user-friendly shopping experience.` },
-    { bodyParagraph: `Our journey began with thorough user research and competitive analysis, guiding us through user interviews, research, definition, and ideation phases. I led the design process, translating our vision into a lo-fi prototype and refining it into a high-fidelity version focused on the 'Add to Cart' and 'Checkout Process' screens.` },
-    { bodyParagraph: `Throughout the process, I contributed to alignment, formatting, and wire-framing, ensuring a cohesive design. Our efforts culminated in five user tests with the initial high-fidelity prototype, which we used to refine the Harvest app in a subsequent iteration. The result is a meaningful solution that supports local businesses and provides a seamless alternative to traditional grocery shopping.` },
+  const projectOverviewText = [
+    { text: `Harvest is an app for health-conscious shoppers, offering locally-sourced, seasonal items from farmers markets. Developed over three weeks by a team including Anna Curl, Kate Ellis, Al Schmidt, Ali Villareal, and myself, the app aims to support local farmers and small businesses while providing a user-friendly shopping experience.` },
+    { text: `Our journey began with thorough user research and competitive analysis, guiding us through user interviews, research, definition, and ideation phases. I led the design process, translating our vision into a lo-fi prototype and refining it into a high-fidelity version focused on the 'Add to Cart' and 'Checkout Process' screens.` },
+    { text: `Throughout the process, I contributed to alignment, formatting, and wire-framing, ensuring a cohesive design. Our efforts culminated in five user tests with the initial high-fidelity prototype, which we used to refine the Harvest app in a subsequent iteration. The result is a meaningful solution that supports local businesses and provides a seamless alternative to traditional grocery shopping.` },
   ];
   
   const info = [
@@ -36,6 +38,10 @@ const HarvestPage = () => {
     { label: 'Duration', copy: '~3 Weeks' },
   ];
 
+  const research = [
+    { text: `We conducted five user interviews and collected 77 survey responses to understand user's shopping habits, pain points, and motivations. We wanted to know how important local produce and farmer's markets are for health-conscious shoppers to gauge the viability of our app, especially during the COVID-19 pandemic.` },
+    { text: `Our user research found that shoppers did not like to spend more than an hour or two shopping. We also noted that most shoppers are willing to spend more at one store than frequent multiple stores to find discounted and cheaper items.` },
+  ]
 
 
   useEffect(() => {
@@ -47,25 +53,21 @@ const HarvestPage = () => {
     <div className='harvest-page'>
       <TopNav bgColor='#E6E870' textColor='#363636' isDarkBG={false}/>
       <div className='harvest-page-container'>
+        
         <div className='hero-image-container'>
           <img src='/images/hero-image/harvest.png' alt='harvest'></img>
         </div>
+
         <div className='main-content-container'> 
           <SubNav items={subMenuItems} />
-          <ProjectOverviewSection paragraph={paragraph} info={info}/>
+          <ProjectOverviewSection text={projectOverviewText} info={info}/>
 
           <div className='whiteBG whiteBG-section-group'>
             <div className='whiteBG main-section-container research'>
               <div className='section-group-container'>
                 <div className='main-section-group'>
                   <SectionHeader sectionHeader='research'/>
-                  <div className='paragraph-group'>
-                    <p>We conducted five user interviews and collected 77 survey responses to understand user's shopping habits, pain points, and motivations. We wanted to know how important local produce and farmer's markets are for health-conscious shoppers to gauge the viability of our app, especially during the COVID-19 pandemic.
-                    </p>
-                    <p>
-                    Our user research found that shoppers did not like to spend more than an hour or two shopping. We also noted that most shoppers are willing to spend more at one store than frequent multiple stores to find discounted and cheaper items.
-                    </p>
-                  </div>
+                  <Paragraph text={research}/>
                 </div>
                 <Subsection header='competitive analysis' copy='Apps and services predominantly centered around large metropolitan areas and lacked engaging and user-friendly designs. In contrast, adjacent competitors thrived by providing packaged meal plans, fresh produce, and groceries sourced directly from local farmers.'/>
                 <Subsection header='user interview' copy='The research identified key pain points related to crowds, product availability, and sourcing products across multiple locations.'/>

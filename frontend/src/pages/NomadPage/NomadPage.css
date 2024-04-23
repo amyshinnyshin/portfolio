@@ -12,7 +12,7 @@
     background-color: #FFD661;
 }
 
-.nomad-page-container .hero-image-container {
+.nomad-page-container > .hero-image-container {
     display: flex;
     width: 100vw;
     height: 560px;
@@ -20,4 +20,9 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+}
+
+.nomad-page-container > .hero-image-container > img {
+    width: 928px;
+    flex-shrink: 0;
 }

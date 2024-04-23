@@ -10,18 +10,19 @@ import { HiveGridLayout } from '../../components/GridLayout/GridLayout';
 
 
 const HivePage = () => {
-    const subMenuItems = [
-      { menuText: 'project overview' },
-      { menuText: 'research' },
-      { menuText: 'definition' },
-      { menuText: 'ideation' },
-      { menuText: 'usability' },
-      { menuText: 'design' },
-      { menuText: 'future steps' },
-    ];
-    const paragraph = [
-        { bodyParagraph: `The Hive app simplifies job searching by providing a centralized platform for organizing and monitoring the process. Users can input application details, track status updates, store relevant documents, and gain valuable insights, all within a single interface.` },
-        { bodyParagraph: `For the development, I utilized Django Rest Framework for the backend and React for the frontend. This combination enables the app to function like a Kanban board, where the backend API manages task data and status updates, while the frontend renders tasks dynamically. This approach allows users to visualize and manage their job search tasks in a familiar and intuitive manner, enhancing efficiency and organization.` },
+  const subMenuItems = [
+    { menuText: 'project overview' },
+    { menuText: 'research' },
+    { menuText: 'definition' },
+    { menuText: 'ideation' },
+    { menuText: 'usability' },
+    { menuText: 'design' },
+    { menuText: 'future steps' },
+  ];
+
+    const projectOverviewText = [
+        { text: `The Hive app simplifies job searching by providing a centralized platform for organizing and monitoring the process. Users can input application details, track status updates, store relevant documents, and gain valuable insights, all within a single interface.` },
+        { text: `For the development, I utilized Django Rest Framework for the backend and React for the frontend. This combination enables the app to function like a Kanban board, where the backend API manages task data and status updates, while the frontend renders tasks dynamically. This approach allows users to visualize and manage their job search tasks in a familiar and intuitive manner, enhancing efficiency and organization.` },
       ];
       
     const info = [
@@ -46,7 +47,7 @@ const HivePage = () => {
 
         <div className='main-content-container'> 
           <SubNav items={subMenuItems} />
-          <ProjectOverviewSection paragraph={paragraph} info={info}/>
+          <ProjectOverviewSection text={projectOverviewText} info={info}/>
 
           <div className='whiteBG whiteBG-section-group'>
             <div className='whiteBG main-section-container ideation'>

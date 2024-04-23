@@ -20,9 +20,9 @@ const BookNookPage = () => {
     { menuText: 'future steps' },
   ];
 
-  const paragraph = [
-      { bodyParagraph: `Booknook is an app designed to help users discover, organize, and enjoy books. Inspired by popular platforms like Goodreads and Spotify, it aims to help simplify how people engage with books.` },
-      { bodyParagraph: `The objective of this project was to develop a Single Page Application (SPA) using React and a third-party API. I utilized the Open Book API and created custom React components to implement various features such as search functionality, book summaries, personal libraries, and more. The design and ideation were done using Figma, and then I implemented the frontend using React, connecting it to the Open Book API to retrieve and display book details.` },
+  const projectOverviewText = [
+      { text: `Booknook is an app designed to help users discover, organize, and enjoy books. Inspired by popular platforms like Goodreads and Spotify, it aims to help simplify how people engage with books.` },
+      { text: `The objective of this project was to develop a Single Page Application (SPA) using React and a third-party API. I utilized the Open Book API and created custom React components to implement various features such as search functionality, book summaries, personal libraries, and more. The design and ideation were done using Figma, and then I implemented the frontend using React, connecting it to the Open Book API to retrieve and display book details.` },
     ];
 
   const info = [
@@ -33,7 +33,6 @@ const BookNookPage = () => {
   ];
 
   useEffect(() => {
-
     window.scrollTo(0, 0);
   }, []);
 
@@ -44,13 +43,13 @@ const BookNookPage = () => {
       <div className='booknook-page-container'>
 
         <div className='hero-image-container'>
-          <img src='/images/hero-image/booknook.png' alt='od-nav'></img>
+          <img src='/images/hero-image/booknook.png' alt='booknook'></img>
         </div>
 
             
         <div className='main-content-container'> 
           <SubNav items={subMenuItems} />
-          <ProjectOverviewSection paragraph={paragraph} info={info}/>
+          <ProjectOverviewSection text={projectOverviewText} info={info}/>
 
           <div className='whiteBG whiteBG-section-group'>
             <div className='whiteBG main-section-container ideation'>

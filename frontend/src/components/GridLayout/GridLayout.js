@@ -55,5 +55,45 @@ const BookNookLayoutDesigns = () => {
   )
 }
 
+const NomadLayoutDesigns = () => {
+  return (
+    <div className='nomad-design-grid-layout'>
 
-export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns}
+      <div className='full-width'>
+        <div className='sidebar-and-img-container'>
+          <div className='sidebar'>
+            <div className='sidebar-description'>
+              <div className='descriptive-header'>
+                <h6 className='semibold'>MVP</h6>
+                <h5 className='descriptive'>a model with RESTful routes and full CRUD</h5>
+              </div>
+              <p>Users can effortlessly create, edit/update, read and delete a travel plan to personalize their travel itinerary with ease.</p>
+            </div>
+          </div>
+        
+          <img src='/images/nomad/mvp.png' alt='mvp-design'/>
+        </div>
+      </div>
+
+      <div className='full-width'>
+        <div className='sidebar-and-img-container'>
+          <img src='/images/nomad/stretch-goal.png' alt='mvp-design'/>
+          <div className='sidebar'>
+            <div className='sidebar-description'>
+              <div className='descriptive-header'>
+                <h6 className='semibold'>STRETCH GOALS</h6>
+                <h5 className='descriptive'>real-time insights with APIs</h5>
+              </div>
+              <p>By integrating weather API and Google Maps, users can gain instant access to live updates, ensuring they stay informed about weather conditions and navigate with precision.</p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+
+export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns, NomadLayoutDesigns}

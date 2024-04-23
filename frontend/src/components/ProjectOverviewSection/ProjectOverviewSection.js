@@ -2,15 +2,15 @@ import React from 'react';
 import './ProjectOverviewSection.css';
 import ReadOnlyField from '../ReadOnlyField/ReadOnlyField';
 
-const ProjectOverviewSection = ({ paragraph, info }) => {
+const ProjectOverviewSection = ({ text, info }) => {
   return (
     <div className='project-overview-section'>
         <div className='project-overview-content-container'>
         <h1 className='header'>Project Overview</h1>
         <div className='main-content-container'>
             <div className='paragraph-group'>
-            {paragraph.map((item, index) => (
-                <p key={index}>{item.bodyParagraph}</p>
+            {text.map((item, index) => (
+                <p key={index}>{item.text}</p>
             ))}
             </div>
             <div className='read-only-container'>
