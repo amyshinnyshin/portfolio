@@ -26,3 +26,19 @@
     width: 928px;
     flex-shrink: 0;
 }
+
+.nomad-code-divider-section {
+    background-color: #CBD1EA;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 400px;
+    padding: 0px, 96px 0px 96px;
+    overflow: hidden;
+}
+
+.nomad-code-divider-section > img {
+    top: -120px;
+    width: 100%;
+    opacity: 70%;
+}

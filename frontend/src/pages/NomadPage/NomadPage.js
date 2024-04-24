@@ -6,7 +6,7 @@ import ProjectOverviewSection from '../../components/ProjectOverviewSection/Proj
 import Subsection from '../../components/Subsection /Subsection';
 import SubNav from '../../components/SubNav/SubNav';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-import { NomadLayoutDesigns } from '../../components/GridLayout/GridLayout';
+import { NomadLayoutDesigns, NomadLayoutDev } from '../../components/GridLayout/GridLayout';
 import Paragraph from '../../components/Paragraph/Paragraph';
 
 
@@ -35,8 +35,7 @@ const NomadPage = () => {
   ];
 
   const development = [
-    { text: `Using React, I created the frontend components and integrated them with the Open Book API to fetch and display book data. I focused on building features such as book tiles, search functionality and book summaries. Each feature was developed iteratively, ensuring that it met the requirements outlined in the user stories and design specifications.` },
-    { text: `I also implemented responsive design principles to ensure that the app was accessible and functional. This involved testing the app and making adjustments to the layout and styling as needed.` },
+    { text: `We utilized EJS for server-side rendering, Node.js for server logic, MongoDB for flexible data storage, and Postman for API testing and validation. ` },
   ];
 
 
@@ -84,13 +83,15 @@ const NomadPage = () => {
               <div className='section-group-container'>
                 <div className='main-section-group'>
                   <SectionHeader sectionHeader='design'/>
-                  <div className='paragraph-group'>
-                    <Subsection header='CREATING High Fidelity Wireframes' copy="I translated the initial concepts and user stories into visual designs via Figma. I wanted to capture the app’s layout, interactions, and visual elements before I started to code. I started by defining the overall structure of the app like navigation and key components, creating screens for browsing books, searching, and viewing book details." paddingBottom='0px'/>
-                    <p>I then added more detailed design elements, such as typography, colors, icons, and imagery, which really brought the vision to life. I also iterated and refined the layout and design elements through the coding process as well, focusing usability and making sure that information and actions were easily accessible to  users.</p>
+                  <div className='paragraph-group-80px'>
+                    <Subsection header='Creating Hi-Fi Wireframes' copy="I created high-fidelity wireframes in Figma as a visual guide for the team to identify essential components and map user flows. This allowed us to align on the Nomad app's structure and functionality." paddingBottom='24px'/>
+                    <img src='/images/nomad/creating-hi-fi.png' alt='hi-fi designs'></img>
                   </div>
-                  
 
-                  
+                  <div className='right-side-showcase padding-btm-80px'>
+                    <Subsection header='Defining Color Palettes' copy="When defining our design's visual identity, I meticulously crafted a color palette that not only aligned with our desired aesthetics but also adhered to accessibility guidelines. I used Tailwind CSS generate a complete color scale based on our palette, so that our styling was consistent, cohesive, and user friendly. " paddingBottom='24px'/>
+                    <img className='right-side-asset' src='/images/nomad/color-palette.png' alt='color-palette'></img>
+                  </div>
                 </div>
                 
               </div>
@@ -99,8 +100,8 @@ const NomadPage = () => {
           </div>
           
 
-          <div className='booknook-code-divider-section'>
-              <img src='/images/booknook/code.png' alt='code'/>
+          <div className='nomad-code-divider-section'>
+              <img src='/images/nomad/code.png' alt='code'/>
           </div>
 
           <div className='tanBG main-section-container one-section'>
@@ -109,7 +110,7 @@ const NomadPage = () => {
                 <SectionHeader sectionHeader='development'/>
                 <Paragraph text={development}/>
                 
-                <NomadLayoutDesigns />
+                <NomadLayoutDev />
                 
               </div>
               
@@ -123,8 +124,9 @@ const NomadPage = () => {
                   <SectionHeader sectionHeader='future steps'/>
                 </div>
               </div>
-              <Subsection header='API INTEGRATION' copy='Integrating the Open Book API taught me the intricacies of working with external data sources, teaching me how to find the right documentation, and integrating the source properly. This process deepened my understanding of API integration and how to effectively use external data in applications. It also highlighted the importance of thorough research and documentation reading when working with third-party APIs.'/>
-              <Subsection header='REACT DEVELOPMENT ' copy="Working with React, I've developed a deeper understanding of component-based UI development, enabling me to create more modular and reusable code. This allowed me to build interfaces that are not only dynamic but also highly interactive, enhancing the user experience."/>
+              <Subsection header='Backend and Frontend Integration Challenges' copy='As a team, we struggled to connect the front and back end due to a complex database structure (a model within a model) coupled with difficulties in GitHub merges and commits. Eager to contribute, we inadvertently worked on the same files, leading to overwritten code and, in some instances, regressions in the functionality. Despite our setbacks, we managed to stand up the CREATE and READ functions.'/>
+              <Subsection header='Refining the Project' copy="Not satisfied with the result, I wanted to take another stab at the project. Restarting the project from scratch, I reviewed resources from GA Bootcamp and YouTube tutorials to successfully implement the Update and Delete functionalities. I refined the user interface by aligning the CSS with our high-fidelity wireframes, making the experience more cohesive."/>
+              <Subsection header='Future Plans' copy="To push the project further, I would love to introduce new features like user authentication and social sharing and make it mobile-responsive in the future. Also, incorporating React and Python into the tech stack would elevate the app's functionality. Despite its challenges, this project pushed me and expanded my understanding."/>
               
             </div>
           </div>

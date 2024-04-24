@@ -47,26 +47,27 @@ div.yellowBG {
   background: #FFC961;
 }
 
-.booknook-brand-grid-layout {
+/* booknook */
+.row-grid-layout {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 24px;
+}
+
+.row-grid-layout > img {
+  max-width: 100%;
+  height: auto;
   border-radius: 2px;
 }
 
-.booknook-brand-grid-layout > img {
-  max-width: 100%;
-  height: auto;
-
-}
-
-.booknook-brand-grid-layout > .full-width {
+.row-grid-layout > .full-width {
   grid-column: span 2;
+  border-radius: 2px;
 }
 
-
+/* nomad */
 .nomad-design-grid-layout {
   width: 100%;
   display: grid;
@@ -120,4 +121,27 @@ div.yellowBG {
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+}
+
+.nomad > img {
+  border-radius: 2px;
+}
+
+/* pest control layout */
+.pest-control-grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  border-radius: 2px;
+}
+
+.pest-control-grid-layout > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pest-control-grid-layout > .full-width {
+  grid-column: span 2;
+  
 }

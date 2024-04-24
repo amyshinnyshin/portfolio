@@ -95,6 +95,10 @@ li {
     padding-bottom: 24px;
 }
 
+.padding-btm-80px {
+    padding-bottom: 80px;
+}
+
 .whiteBG {
     background-color: var(--White);
 }
@@ -163,3 +167,13 @@ li {
     padding-bottom: 80px;
 }
 
+.right-side-showcase {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.right-side-asset {
+    width: 75%;
+}

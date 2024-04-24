@@ -23,10 +23,10 @@ const HiveGridLayout = () => {
 
       <img className='full-width' src='/images/hive/hive-interaction.gif' alt='hive-interaction'/>
         
-        <img src='/images/hive/adding-comment.png' alt='adding-comments'/>
-        <img src='/images/hive/editing-deleting-comment.png' alt='editing-deleting-comments'/>
-        
-        <img className='full-width' src='/images/hive/kanban-board.png' alt='hive-kanban'/>
+      <img src='/images/hive/adding-comment.png' alt='adding-comments'/>
+      <img src='/images/hive/editing-deleting-comment.png' alt='editing-deleting-comments'/>
+      
+      <img className='full-width' src='/images/hive/kanban-board.png' alt='hive-kanban'/>
         
     </div>
   )
@@ -34,7 +34,7 @@ const HiveGridLayout = () => {
 
 const BookNookLayoutBrand = () => {
   return (
-    <div className='booknook-brand-grid-layout'>
+    <div className='row-grid-layout'>
 
       <img className='full-width' src='/images/booknook/booknook-logo.png' alt='booknook-logo'/>
       <img className='full-width' src='/images/booknook/hi-fi.png' alt='booknook-hi-fi'/>
@@ -45,7 +45,7 @@ const BookNookLayoutBrand = () => {
 
 const BookNookLayoutDesigns = () => {
   return (
-    <div className='booknook-brand-grid-layout'>
+    <div className='row-grid-layout'>
 
       <img src='/images/booknook/dropdown.png' alt='dropdown'/>
       <img src='/images/booknook/book-selection.png' alt='book-selection'/>
@@ -95,5 +95,32 @@ const NomadLayoutDesigns = () => {
   )
 }
 
+const NomadLayoutDev = () => {
+  return (
+    <div className='row-grid-layout nomad'>
 
-export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns, NomadLayoutDesigns}
+      <img className='full-width' src='/images/nomad/hi-fi.png' alt='nomad-hi-fi'/>
+      <img className='full-width' src='/images/nomad/nomad-gif.gif' alt='booknook-hi-fi'/>
+        
+    </div>
+  )
+}
+
+const PestControlLayout = () => {
+  return (
+    <div className='pest-control-grid-layout'>
+
+      <img className='full-width' src='/images/pest-control/logo.png' alt='logo'/>
+        
+      <img src='/images/pest-control/pest.png' alt='pests'/>
+      <img src='/images/pest-control/tools.png' alt='tools'/>
+      
+      <img className='full-width' src='/images/pest-control/hi-fi.png' alt='hive-kanban'/>
+        
+    </div>
+  )
+}
+
+
+
+export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns, NomadLayoutDesigns, NomadLayoutDev, PestControlLayout}
