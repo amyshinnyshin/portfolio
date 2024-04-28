@@ -70,14 +70,15 @@ const NomadLayoutDesigns = () => {
               <p>Users can effortlessly create, edit/update, read and delete a travel plan to personalize their travel itinerary with ease.</p>
             </div>
           </div>
-        
           <img src='/images/nomad/mvp.png' alt='mvp-design'/>
+          
+        
         </div>
       </div>
 
       <div className='full-width'>
         <div className='sidebar-and-img-container'>
-          <img src='/images/nomad/stretch-goal.png' alt='mvp-design'/>
+          <img className='yellow' src='/images/nomad/stretch-goal.png' alt='mvp-design'/>
           <div className='sidebar'>
             <div className='sidebar-description'>
               <div className='descriptive-header'>

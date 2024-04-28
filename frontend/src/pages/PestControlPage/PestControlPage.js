@@ -6,7 +6,7 @@ import ProjectOverviewSection from '../../components/ProjectOverviewSection/Proj
 import Subsection from '../../components/Subsection /Subsection';
 import SubNav from '../../components/SubNav/SubNav';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-import { NomadLayoutDev, PestControlLayout } from '../../components/GridLayout/GridLayout';
+import { PestControlLayout } from '../../components/GridLayout/GridLayout';
 import Paragraph from '../../components/Paragraph/Paragraph';
 
 
@@ -35,7 +35,7 @@ const PestControlPage = () => {
   ];
 
   const development = [
-    { text: `We utilized EJS for server-side rendering, Node.js for server logic, MongoDB for flexible data storage, and Postman for API testing and validation. ` },
+    { text: `Using HTML, CSS, and JavaScript, I structured the game code to reflect the wireframes and prototypes created during the ideation/design phase. I used HTML to define the page structure of the game. CSS to style and position elements on the page, ensuring a visually appealing layout and responsive design, and JavaScript to implement game logic – from controlling the behavior of dynamic pests and managing user interactions to handling upgrades and win/loss.` },
   ];
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const PestControlPage = () => {
       <TopNav bgColor='#D1E3FF' textColor='#363636'isDarkBG={false}/>
       <div className='pest-control-page-container'>
         <div className='hero-image-container'>
-          <img src='' alt='od-nav'></img>
+          <img src='/images/hero-image/pest-control.png' alt='pest-control-game'></img>
         </div>
 
         <div className='main-content-container'> 
@@ -62,43 +62,36 @@ const PestControlPage = () => {
                   <div className='paragraph-group'>
                     <p>The ideation phase of this project involved several steps – Identifying Key Features, Creating Assets, and Designing Layouts- and took about 2-3 days to finalize.</p>
                   </div>
-                  <div className='paragraph-group-80px'>
+                  <div className='paragraph-group-160px'>
                     <PestControlLayout />
                   </div>
                   
                 
 
+                <div className='left-side-showcase padding-btm-160px'>
+                    <img className='left-side-asset' src='/images/pest-control/lo-fi.png' alt='lo-fi'></img>
+                    <Subsection header='IDENTIFYING KEY FEATURES' copy="The first step was to define key features for the game. During brainstorming sessions, I outlined essential elements such as dynamic pests and their behaviors, extermination tools – how users could use an upgrade, win/loss, and any other game mechanics that would contribute to the overall gaming experience." />
+                </div>
+
+                <div className='paragraph-group-160px'>
+                  <Subsection header='CREATING ASSETS' copy="After defining the key features, the next step was generating the necessary game assets. Since I wanted Pest Control to have retro 80's arcade game aesthetics, I wanted to incorporate pixelated graphics into the design. However, finding assets in this specific style proved challenging—either they were difficult to come by, or the available assets didn't match the intended aesthetic, so I created them from scratch in Figma." paddingBottom='24px'/>
+                  <img src='/images/pest-control/assets.png' alt='assets'></img>
+                </div>
+
                 <div className='right-side-showcase padding-btm-80px'>
-                    <Subsection header='Defining Color Palettes' copy="When defining our design's visual identity, I meticulously crafted a color palette that not only aligned with our desired aesthetics but also adhered to accessibility guidelines. I used Tailwind CSS generate a complete color scale based on our palette, so that our styling was consistent, cohesive, and user friendly. " paddingBottom='24px'/>
-                    <img className='right-side-asset' src='/images/nomad/color-palette.png' alt='color-palette'></img>
+                  <Subsection header='Designing Layouts' copy="The next step involved designing the layout and interactions for the game page. I created wireframes to position elements and show how players would interact. While I wanted to stay true to Space Invader, I wanted to add an 'upgrades store’. Balancing homage and innovation, I integrated this feature to provide a familiar yet enhanced gaming experience." paddingBottom='24px'/>
+                  <img className='right-side-asset' src='/images/pest-control/layout.png' alt='color-palette'></img>
                 </div>
+
+
                 
               </div>
             </div>
-
-            <div className='whiteBG main-section-container design'>
-              <div className='section-group-container'>
-                <div className='main-section-group'>
-                  <SectionHeader sectionHeader='design'/>
-                  <div className='paragraph-group-80px'>
-                    <Subsection header='Creating Hi-Fi Wireframes' copy="I created high-fidelity wireframes in Figma as a visual guide for the team to identify essential components and map user flows. This allowed us to align on the Nomad app's structure and functionality." paddingBottom='24px'/>
-                    <img src='/images/nomad/creating-hi-fi.png' alt='hi-fi designs'></img>
-                  </div>
-
-                  <div className='right-side-showcase padding-btm-80px'>
-                    <Subsection header='Defining Color Palettes' copy="When defining our design's visual identity, I meticulously crafted a color palette that not only aligned with our desired aesthetics but also adhered to accessibility guidelines. I used Tailwind CSS generate a complete color scale based on our palette, so that our styling was consistent, cohesive, and user friendly. " paddingBottom='24px'/>
-                    <img className='right-side-asset' src='/images/nomad/color-palette.png' alt='color-palette'></img>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
           </div>
           
 
-          <div className='nomad-code-divider-section'>
-              <img src='/images/nomad/code.png' alt='code'/>
+          <div className='pest-control-code-divider-section'>
+              <img src='/images/pest-control/code.png' alt='code'/>
           </div>
 
           <div className='tanBG main-section-container one-section'>
@@ -107,7 +100,7 @@ const PestControlPage = () => {
                 <SectionHeader sectionHeader='development'/>
                 <Paragraph text={development}/>
                 
-                <NomadLayoutDev />
+                <img className='pest-control-gif' src='/images/pest-control/pest-control-gif.gif' alt='color-palette'></img>
                 
               </div>
               
@@ -121,9 +114,10 @@ const PestControlPage = () => {
                   <SectionHeader sectionHeader='future steps'/>
                 </div>
               </div>
-              <Subsection header='Backend and Frontend Integration Challenges' copy='As a team, we struggled to connect the front and back end due to a complex database structure (a model within a model) coupled with difficulties in GitHub merges and commits. Eager to contribute, we inadvertently worked on the same files, leading to overwritten code and, in some instances, regressions in the functionality. Despite our setbacks, we managed to stand up the CREATE and READ functions.'/>
-              <Subsection header='Refining the Project' copy="Not satisfied with the result, I wanted to take another stab at the project. Restarting the project from scratch, I reviewed resources from GA Bootcamp and YouTube tutorials to successfully implement the Update and Delete functionalities. I refined the user interface by aligning the CSS with our high-fidelity wireframes, making the experience more cohesive."/>
-              <Subsection header='Future Plans' copy="To push the project further, I would love to introduce new features like user authentication and social sharing and make it mobile-responsive in the future. Also, incorporating React and Python into the tech stack would elevate the app's functionality. Despite its challenges, this project pushed me and expanded my understanding."/>
+              <Subsection header='Limited Gameplay Expansion' copy='I was able to capture the essence of a nostalgic arcade-style game, but due to time, I could only create one level with two different types of pests. I want to expand the gameplay with multiple levels, each presenting unique challenges and escalating difficulty.'/>
+              <Subsection header='Testing Throughout Development' copy="I wish I could have conducted testing throughout the ideation, design, and development process to identify and address any issues that might affect gameplay or user experience."/>
+              <Subsection header='Utilizing React' copy="Since this was the first project in our General Assembly Bootcamp, we hadn't yet been introduced to React. I wonder how incorporating React as the frontend library could have facilitated a faster and more efficient iteration process and made the project more robust and scalable."/>
+              <Subsection header='Valuable Experience' copy="Despite the constraints, this project was a valuable learning experience. I look forward to further refining 'Pest Control' and exploring future development possibilities."/>
               
             </div>
           </div>

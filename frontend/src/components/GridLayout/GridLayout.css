@@ -10,6 +10,7 @@
 .harvest-grid-layout > img {
   max-width: 100%;
   height: auto;
+  border-radius: 2px;
 }
 
 .harvest-grid-layout > .full-width {
@@ -77,14 +78,13 @@ div.yellowBG {
 }
 
 .nomad-design-grid-layout img {
-  width: 75%;
-  height: auto;
-
+  width: 70%;
 }
 
 .nomad-design-grid-layout .full-width {
   grid-column: span 2;
   border-radius: 2px;
+  overflow: hidden;
 }
 
 .sidebar-and-img-container {
@@ -134,6 +134,7 @@ div.yellowBG {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   border-radius: 2px;
+  overflow: hidden;
 }
 
 .pest-control-grid-layout > img {

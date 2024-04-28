@@ -2,7 +2,7 @@ import React from 'react'
 
 const Paragraph = ({text}) => {
   return (
-    <div className='paragraph-group'>
+    <div>
         {text.map((item, index) => (
                 <p key={index}>{item.text}</p>
             ))}
