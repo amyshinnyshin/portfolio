@@ -70,7 +70,10 @@ const NomadLayoutDesigns = () => {
               <p>Users can effortlessly create, edit/update, read and delete a travel plan to personalize their travel itinerary with ease.</p>
             </div>
           </div>
-          <img src='/images/nomad/mvp.png' alt='mvp-design'/>
+          <div className='centered-asset purple-bg'>
+            <img src='/images/nomad/mvp.png' alt='mvp-design'/>
+          </div>
+          
           
         
         </div>
@@ -78,7 +81,10 @@ const NomadLayoutDesigns = () => {
 
       <div className='full-width'>
         <div className='sidebar-and-img-container'>
-          <img className='yellow' src='/images/nomad/stretch-goal.png' alt='mvp-design'/>
+          <div className='centered-asset yellow-bg'>
+            <img src='/images/nomad/stretch-goal.png' alt='stretch-goals'/>
+          </div>
+          
           <div className='sidebar'>
             <div className='sidebar-description'>
               <div className='descriptive-header'>
@@ -137,8 +143,8 @@ const ODNavProblemLayout = () => {
               <p>Horizontal tabs makes it difficult for users to understand the relationship between different levels of information and navigate the Order Details effectively.</p>
             </div>
           </div>
-          <div className='right-asset-blue'>
-            <img src='/images/od-nav/horizontal-tabs.png' alt='mvp-design'/>
+          <div className='centered-asset blue-bg'>
+            <img src='/images/od-nav/horizontal-tabs.png' alt='horizontal-tabs'/>
           </div>
         
           
@@ -148,7 +154,11 @@ const ODNavProblemLayout = () => {
 
       <div className='full-width'>
         <div className='sidebar-and-img-container'>
-          <img className='yellow' src='/images/od-nav/more-tab.png' alt='mvp-design'/>
+          <div className='left-asset lime-bg'>
+            <img src='/images/od-nav/more-tab.png' alt='more-tabs'/>
+          </div>
+
+      
           <div className='sidebar'>
             <div className='sidebar-description'>
               <div className='descriptive-header'>

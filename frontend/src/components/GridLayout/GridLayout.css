@@ -91,13 +91,43 @@ div.yellowBG {
   display: flex;
   justify-content: flex-end;
   align-self: stretch;
+  min-height: 480px;
 }
 
-.sidebar-and-img-container > div.right-asset-blue {
-  background-color: #D0E0FF;
+.sidebar-and-img-container > div.centered-asset {
   flex: 1;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
+.sidebar-and-img-container > div.left-asset {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Center horizontally */
+  align-items: flex-end; /* Center vertically */
+}
+
+
+.blue-bg {
+  background-color: #D0E0FF;
+}
+
+.lime-bg {
+  background-color: #F7F7D9;
+}
+
+.purple-bg {
+  background-color: #CBD1EA;
+}
+
+.yellow-bg {
+  background-color: #FFF0A4;
+}
+
+.centered-asset img, .left-asset img {
+  width: 100%;
+}
 
 .sidebar {
   display: flex;
