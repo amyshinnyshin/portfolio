@@ -1,0 +1,23 @@
+.od-nav-quote {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.od-nav-quote > img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.od-nav-quote > h5.descriptive {
+    text-align: center;
+    max-width: 85%;
+    z-index: 1;
+    padding-top: 40px;
+}

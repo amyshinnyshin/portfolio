@@ -91,6 +91,11 @@ li {
     border-bottom: 1px solid var(--Tuatara-100);
 }
 
+.vertical-rule-page-80px {
+    padding-top: 80px;
+    border-bottom: 1px solid var(--Tuatara-100);
+}
+
 .padding-btm-24px {
     padding-bottom: 24px;
 }

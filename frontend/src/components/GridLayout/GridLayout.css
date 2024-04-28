@@ -8,7 +8,7 @@
 }
 
 .harvest-grid-layout > img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 2px;
 }
@@ -18,8 +18,8 @@
 }
 
 
-/* hive layout */
-.hive-grid-layout {
+/* hive layout & od-nav */
+.hive-grid-layout, .od-nav-grid-layout {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,12 +27,12 @@
   gap: 24px;
 }
 
-.hive-grid-layout > img {
-  max-width: 100%;
+.hive-grid-layout, .od-nav-grid-layout > img {
+  width: 100%;
   height: auto;
 }
 
-.hive-grid-layout > .full-width {
+.hive-grid-layout, .od-nav-grid-layout > .full-width {
   grid-column: span 2;
 }
   
@@ -58,7 +58,7 @@ div.yellowBG {
 }
 
 .row-grid-layout > img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 2px;
 }
@@ -69,7 +69,7 @@ div.yellowBG {
 }
 
 /* nomad */
-.nomad-design-grid-layout {
+.design-grid-layout {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -77,11 +77,11 @@ div.yellowBG {
   gap: 24px;
 }
 
-.nomad-design-grid-layout img {
+.design-grid-layout img {
   width: 70%;
 }
 
-.nomad-design-grid-layout .full-width {
+.design-grid-layout .full-width {
   grid-column: span 2;
   border-radius: 2px;
   overflow: hidden;
@@ -90,14 +90,18 @@ div.yellowBG {
 .sidebar-and-img-container {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
   align-self: stretch;
+}
+
+.sidebar-and-img-container > div.right-asset-blue {
+  background-color: #D0E0FF;
+  flex: 1;
 }
 
 
 .sidebar {
   display: flex;
-  width: 272px;
+  width: 25%;
   padding: 24px;
   flex-direction: column;
   justify-content: flex-end;

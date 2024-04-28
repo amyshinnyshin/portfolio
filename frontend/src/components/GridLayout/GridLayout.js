@@ -57,7 +57,7 @@ const BookNookLayoutDesigns = () => {
 
 const NomadLayoutDesigns = () => {
   return (
-    <div className='nomad-design-grid-layout'>
+    <div className='design-grid-layout'>
 
       <div className='full-width'>
         <div className='sidebar-and-img-container'>
@@ -122,6 +122,65 @@ const PestControlLayout = () => {
   )
 }
 
+const ODNavProblemLayout = () => {
+  return (
+    <div className='design-grid-layout'>
+
+      <div className='full-width'>
+        <div className='sidebar-and-img-container'>
+          <div className='sidebar'>
+            <div className='sidebar-description'>
+              <div className='descriptive-header'>
+                <h6 className='semibold'>PROBLEM</h6>
+                <h5 className='descriptive'>lack of hierarchy between orders and shipments</h5>
+              </div>
+              <p>Horizontal tabs makes it difficult for users to understand the relationship between different levels of information and navigate the Order Details effectively.</p>
+            </div>
+          </div>
+          <div className='right-asset-blue'>
+            <img src='/images/od-nav/horizontal-tabs.png' alt='mvp-design'/>
+          </div>
+        
+          
+        
+        </div>
+      </div>
+
+      <div className='full-width'>
+        <div className='sidebar-and-img-container'>
+          <img className='yellow' src='/images/od-nav/more-tab.png' alt='mvp-design'/>
+          <div className='sidebar'>
+            <div className='sidebar-description'>
+              <div className='descriptive-header'>
+                <h6 className='semibold'>PROBLEM</h6>
+                <h5 className='descriptive'>limited visibility of tabs</h5>
+              </div>
+              <p>Horizontal tabs can become crowded, especially on smaller screens. Tabs that are not currently in view can be less noticeable and user maybe overlook them.</p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+const ODDesignLayout = () => {
+  return (
+    <div className='od-nav-grid-layout'>
+
+      <img src='/images/od-nav/tooltip.png' alt='tooltip'/>
+      <img src='/images/od-nav/expanded.png' alt='one-menu'/>
+
+      <img className='full-width' src='/images/od-nav/explorations.png' alt='explorations'/>
+      
+      <img className='full-width' src='/images/od-nav/vertical-menu.png' alt='vertical-menu'/>
+        
+    </div>
+  )
+}
 
 
-export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns, NomadLayoutDesigns, NomadLayoutDev, PestControlLayout}
+
+export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns, NomadLayoutDesigns, NomadLayoutDev, PestControlLayout, ODNavProblemLayout, ODDesignLayout }

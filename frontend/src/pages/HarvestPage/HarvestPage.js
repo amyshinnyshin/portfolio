@@ -126,7 +126,7 @@ const HarvestPage = () => {
                 <div className='main-section-group'>
                   <SectionHeader sectionHeader='usability testing'/>
                   <div className='paragraph-group'>
-                    <Subsection copy="After designing the lo-fi prototype, we conducted five usability tests and analyzed the data. We identified three main issues:"/>
+                    <p>After designing the lo-fi prototype, we conducted five usability tests and analyzed the data. We identified three main issues:</p>
                     <AssetsOnRight />
                   </div>
                 </div>
