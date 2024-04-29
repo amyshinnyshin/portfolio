@@ -191,6 +191,21 @@ const ODDesignLayout = () => {
   )
 }
 
+const ODEDDesignLayout = () => {
+  return (
+    <div className='od-ed-grid-layout'>
+
+        <img className='full-width' src='/images/od-ed/new-order-details-modal.gif' alt='modal'/>
+        
+        <img src='/images/od-ed/order-summary.gif' alt='order-summary'/>
+        <img src='/images/od-ed/shipment-actions.gif' alt='shipment-actions'/>
+        
+        <img className='full-width' src='/images/od-ed/full-flow.gif' alt='full-flow'/>
+        
+    </div>
+  )
+}
 
 
-export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns, NomadLayoutDesigns, NomadLayoutDev, PestControlLayout, ODNavProblemLayout, ODDesignLayout }
+
+export { HarvestGridLayout, HiveGridLayout, BookNookLayoutBrand, BookNookLayoutDesigns, NomadLayoutDesigns, NomadLayoutDev, PestControlLayout, ODNavProblemLayout, ODDesignLayout, ODEDDesignLayout }

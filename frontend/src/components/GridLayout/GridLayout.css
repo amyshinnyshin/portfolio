@@ -180,3 +180,22 @@ div.yellowBG {
   grid-column: span 2;
   
 }
+
+/* od ed layout */
+.od-ed-grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 24px;
+}
+
+.od-ed-grid-layout > img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.od-ed-grid-layout > .full-width {
+  grid-column: span 2;
+}

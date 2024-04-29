@@ -49,6 +49,7 @@ const OrderDetailsNavPage = () => {
         <div className='hero-image-container'>
           <img src='/images/hero-image/od-nav.png' alt='od-nav'></img>
         </div>
+
         <div className='main-content-container'> 
           <SubNav items={subMenuItems} />
           <ProjectOverviewSection text={projectOverviewText} info={info}/>
@@ -185,7 +186,7 @@ const OrderDetailsNavPage = () => {
               </div>
               <Subsection header='Continuous Improvement' copy='Establish a feedback loop with users to gather ongoing feedback on Order Details and use this feedback to identify areas for improvement and prioritize enhancements.'/>
               <Subsection header='Monitoring & Analytics ' copy="Monitor user interactions with the Order Details interface using LogRocket and MGMT and use this data to identify usage patterns, pain points, and areas for optimization."/>
-              <Subsection header='USER education & Support' copy='Provide resources and support to help users understand and make the most of Order Details'/>
+              <Subsection header='USER education & Support' copy='Provide resources and support to help users understand and make the most of Order Details.'/>
   
               
             </div>
