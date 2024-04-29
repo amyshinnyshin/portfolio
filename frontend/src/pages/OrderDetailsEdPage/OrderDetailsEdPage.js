@@ -42,7 +42,7 @@ const OrderDetailsEdPage = () => {
 
 
   return (
-    <div className='order-details-ed-page'>
+    <div className='od-ed-page'>
       <TopNav bgColor='#D4D4FA' textColor='#363636'isDarkBG={false}/>
       <div className='od-ed-page-container'>
         <div className='hero-image-container'>
@@ -141,39 +141,21 @@ const OrderDetailsEdPage = () => {
             </div>
           </div>
 
-          <div className='whiteBG whiteBG-section-group'>
-            <div className='whiteBG main-section-container learnings'>
-              <div className='section-group-container'>
-                <div className='main-section-group'>
-                  <SectionHeader sectionHeader='learnings'/>
-
-                  <Subsection header='Tour Engagement' copy="The analytics showed that users engaged with the modal and coach mark and were actively seeking information and learning about the new features."/>
-                  <img src='/images/od-ed/learnings.png' alt='learnings'/>
-                  
-                </div>
-                
-                <div className='vertical-rule-page'></div>
-              </div>
-            </div>
-
-            <div className='whiteBG main-section-container'>
+          <div className='whiteBG main-section-container one-section future-steps'>
             <div className='section-group-container'>
               <div className='main-section-group'>
                 <div className='paragraph-group'>
                   <SectionHeader sectionHeader='future steps'/>
                 </div>
               </div>
-              <Subsection header='Define standard Templates' copy='Create standard templates for education modals and coachmarks that can be easily customized for different features and across products.'/>
-              <Subsection header='Establish Best Practices' copy="Develop best practices for using education modals and coachmarks based on past experiences and user feedback. This includes when and how to use them effectively to maximize user understanding and engagement."/>
-              <Subsection header='Implement Feedback loop' copy='Set up feedback loops to gather input from users and stakeholders on the effectiveness of the education modals and coachmarks. Use this feedback to iterate and improve the templates and best practices.'/>
-              <Subsection header='Monitor and Measure Effectiveness' copy="Continuously monitor and measure the effectiveness of the education modals and coachmarks in improving user understanding and engagement. Use this data to make informed decisions about their use in future releases."/>
-              <Subsection header='Iterate and Improve' copy='Regularly review and update the standard templates and best practices based on user feedback and data analysis. Iterate on the design and messaging to ensure they remain effective for future feature releases.'/>
+              <Subsection header='Continuous Improvement' copy='Establish a feedback loop with users to gather ongoing feedback on Order Details and use this feedback to identify areas for improvement and prioritize enhancements.'/>
+              <Subsection header='Monitoring & Analytics ' copy="Monitor user interactions with the Order Details interface using LogRocket and MGMT and use this data to identify usage patterns, pain points, and areas for optimization."/>
+              <Subsection header='USER education & Support' copy='Provide resources and support to help users understand and make the most of Order Details.'/>
+  
+              
             </div>
-
-            </div>
-
-            
           </div>
+
         </div>
       </div>
     </div>
